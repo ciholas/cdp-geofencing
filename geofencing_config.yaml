@@ -1,0 +1,24 @@
+# Ciholas, Inc. - www.ciholas.com 
+# Licensed under: creativecommons.org/licenses/by/4.0
+
+Ethernet_Settings:
+  CUWB_Input:
+    IP: 239.255.76.67
+    Port: 7667
+    Interface: 169.254.177.218
+  CUWB_Output:
+    IP: 239.255.76.67
+    Port: 7668
+    Interface: 169.254.177.218
+Zones:
+  Paper:
+    Vertices: [[622.5, 855.5], [622.5, 575.7], [340.6, 575.7], [340.6, 855.5]]
+    RGB: [255, 255, 0]
+  WeirdZone:
+    Vertices: [[1278.4, 341.2], [683, 387.8], [1134.5, 34.3], [1892.9, 609.9], [1122.6, 876.2]]
+    RGB: [255, 153, 255]
+  Triangle:
+    Vertices: [[1278.4, 341.2], [1892.9, 609.9], [1122.6, 876.2]]
+    RGB: [0, 153, 76]
+Hysteresis_Value: 5
+

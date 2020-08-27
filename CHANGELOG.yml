@@ -1,0 +1,8 @@
+HEAD:
+  public: 
+  note: This is the place to add new notes, past versions should not be touched.
+
+1.0.0:
+  public:
+  - Initial cdp-geofencing release.
+  timestamp: 2020 08 27 14 28 00 +00:00

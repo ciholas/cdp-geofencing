@@ -1,0 +1,34 @@
+# Ciholas, Inc. - www.ciholas.com 
+# Licensed under: creativecommons.org/licenses/by/4.0
+
+Ethernet_Settings:
+  # This is where to output of the geofencing script is sent to
+  CUWB_Input:
+    IP: 239.255.76.67
+    Port: 7667
+    # 0.0.0.0 should automatically find the best interface, but it may not always work
+    Interface: 0.0.0.0
+  # This is the input of the geofencing script
+  CUWB_Output:
+    # These do not have to match the CUWB_Input
+    IP: 239.255.76.67
+    # It is recommended you at least change the port for less traffic
+    Port: 7667
+    Interface: 0.0.0.0
+Zones:
+  # Zone name needs to be a string
+  SampleZone:
+    # Do not change the keys 'Vertices' and 'RGB', but you can change the associated values
+    Vertices: [[622.5, 855.5], [622.5, 575.7], [340.6, 575.7], [340.6, 855.5]]
+    # RGB Color value, each number needs to be 0-255
+    RGB: [255, 255, 0]
+  ExampleZone:
+    # A zone requires at least three vertices
+    Vertices: [[1278.4, 341.2], [683, 387.8], [1134.5, 34.3], [1892.9, 609.9], [1122.6, 876.2]]
+    RGB: [255, 153, 255]
+  # Any number of zones can be created and used
+  AnotherZone:
+    Vertices: [[1278.4, 341.2], [1892.9, 609.9], [1122.6, 876.2]]
+    RGB: [0, 153, 76]
+# A value of 0 or more. A higher value means more accurate zone recognition but slower recognition times and vice versa.
+Hysteresis_Value: 25
