@@ -1,0 +1,15 @@
+Ethernet Settings:
+  Input: # should match geofencer Output settings
+    IP: 239.255.54.98
+    Port: 6790
+    Interface: 169.254.239.175
+  Output:
+    CUWB URL: http://localhost:5000
+    CUWBNet: Demo_Network
+Zones:
+  Zone A:
+    Color: red
+  Zone B:
+    Color: blue
+Default Color: white
+Print Output: true

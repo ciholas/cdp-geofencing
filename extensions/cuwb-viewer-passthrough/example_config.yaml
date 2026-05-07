@@ -1,0 +1,16 @@
+Ethernet Settings:
+  Input: # should match geofencer Output settings
+    IP: 239.255.54.98
+    Port: 6790
+    Interface: 169.254.239.175
+  Output:
+    IP: 239.255.76.67
+    Port: 7667
+    Interface: 169.254.239.175
+Zones:
+  Zone A:
+    Color: [255, 0, 0] # red
+  Zone B:
+    Color: [0, 0, 255] # blue
+Default Color: [0, 0, 0] # black
+Print Output: true

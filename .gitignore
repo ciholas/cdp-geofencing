@@ -1,0 +1,6 @@
+venv
+*.yaml
+*.yml
+!example_config.yaml
+!*schema.yaml
+!.gitlab-ci.yml

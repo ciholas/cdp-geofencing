@@ -1,0 +1,15 @@
+Ethernet Settings:
+  Input: include('stream')
+  Output: include('stream', required=False)
+Zones: map(include('zone'), key=str())
+Default Color: include('color', required=False)
+Print Output: bool(required=False)
+---
+stream:
+  IP: ip(version=4)
+  Port: int(min=0)
+  Interface: ip(version=4)
+zone:
+  Color: include('color')
+---
+color: list(int(min=0, max=255), min=3, max=3)

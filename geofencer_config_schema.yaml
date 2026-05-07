@@ -1,0 +1,16 @@
+Ethernet Settings:
+  Input: include('stream')
+  Output: include('stream', required=False)
+Output Interval: num(min=0, required=False)
+Print Output: bool(required=False)
+Zones: map(include('zone'), key=str(max=50))
+---
+zone:
+  Vertices: list(list(num, min=2, max=2), min=3)
+  Z Range: list(num, min=2, max=2)
+  Hysteresis: num(min=0, required=False)
+---
+stream:
+  IP: ip(version=4)
+  Port: int(min=0)
+  Interface: ip(version=4)

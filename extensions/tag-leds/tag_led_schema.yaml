@@ -1,0 +1,24 @@
+Ethernet Settings:
+  Input: include('stream')
+  Output:
+    CUWB URL: str()
+    CUWBNet: str()
+Zones: map(include('zone'), key=str())
+Default Color: include('color')
+LED Timeout: int(min=5, max=1800, required=False)
+LED Flashing: bool(required=False)
+Print Output: bool(required=False)
+---
+stream:
+  IP: ip(version=4)
+  Port: int(min=0)
+  Interface: ip(version=4)
+zone:
+  Color: include('color')
+---
+color: any(str(equals='red', ignore_case=True),
+           str(equals='green', ignore_case=True),
+           str(equals='blue', ignore_case=True),
+           str(equals='magenta', ignore_case=True),
+           str(equals='yellow', ignore_case=True),
+           str(equals='white', ignore_case=True))

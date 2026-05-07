@@ -1,2 +1,6 @@
-pyyaml
 cdp-py
+shapely
+PyYAML
+yamale
+requests
+netifaces
